@@ -1,0 +1,3 @@
+node_modules/
+
+cloudfunctions/loginWithWechat/wechat_config.js

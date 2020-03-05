@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "tui-drawer": "/colorui/components/drawer/drawer"
+  },
+  "component": true
+}
