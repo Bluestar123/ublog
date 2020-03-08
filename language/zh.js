@@ -16,5 +16,8 @@ module.exports = {
 	register_policy: '服务条款及隐私',
 	register_wrong_confirm_password_tips: '两次密码不一致',
 	// 首页
-	home_stories: '你的故事'
+	home_stories: '你的故事',
+	// 侧边栏
+	drawer_search: '搜索',
+	drawer_friends: '好友'
 }

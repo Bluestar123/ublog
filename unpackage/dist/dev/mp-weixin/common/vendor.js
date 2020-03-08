@@ -7611,9 +7611,9 @@ module.exports = g;
 
 /***/ }),
 /* 4 */
-/*!**************************************!*\
-  !*** D:/my_project/UBlog/pages.json ***!
-  \**************************************/
+/*!***********************************!*\
+  !*** E:/uniDemo/ublog/pages.json ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8518,9 +8518,9 @@ module.exports = {"_from":"@dcloudio/uni-stat@alpha","_id":"@dcloudio/uni-stat@2
 
 /***/ }),
 /* 7 */
-/*!*******************************************************!*\
-  !*** D:/my_project/UBlog/pages.json?{"type":"style"} ***!
-  \*******************************************************/
+/*!****************************************************!*\
+  !*** E:/uniDemo/ublog/pages.json?{"type":"style"} ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8529,9 +8529,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 8 */
-/*!******************************************************!*\
-  !*** D:/my_project/UBlog/pages.json?{"type":"stat"} ***!
-  \******************************************************/
+/*!***************************************************!*\
+  !*** E:/uniDemo/ublog/pages.json?{"type":"stat"} ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8665,9 +8665,9 @@ function normalizeComponent (
 
 /***/ }),
 /* 15 */
-/*!********************************************!*\
-  !*** D:/my_project/UBlog/utils/plugins.js ***!
-  \********************************************/
+/*!*****************************************!*\
+  !*** E:/uniDemo/ublog/utils/plugins.js ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8699,9 +8699,9 @@ _vue.default.prototype.$relaunch = function (url) {return uni.reLaunch({
 
 /***/ }),
 /* 16 */
-/*!******************************************!*\
-  !*** D:/my_project/UBlog/store/index.js ***!
-  \******************************************/
+/*!***************************************!*\
+  !*** E:/uniDemo/ublog/store/index.js ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9717,9 +9717,9 @@ var index_esm = {
 
 /***/ }),
 /* 18 */
-/*!**************************************************!*\
-  !*** D:/my_project/UBlog/store/modules/index.js ***!
-  \**************************************************/
+/*!***********************************************!*\
+  !*** E:/uniDemo/ublog/store/modules/index.js ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9736,9 +9736,9 @@ modules;exports.default = _default;
 
 /***/ }),
 /* 19 */
-/*!*****************************************************************!*\
-  !*** D:/my_project/UBlog/store/modules sync nonrecursive \.js$ ***!
-  \*****************************************************************/
+/*!**************************************************************!*\
+  !*** E:/uniDemo/ublog/store/modules sync nonrecursive \.js$ ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9769,9 +9769,9 @@ webpackContext.id = 19;
 
 /***/ }),
 /* 20 */
-/*!******************************************!*\
-  !*** D:/my_project/UBlog/language/zh.js ***!
-  \******************************************/
+/*!***************************************!*\
+  !*** E:/uniDemo/ublog/language/zh.js ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9794,13 +9794,16 @@ module.exports = {
   register_policy: '服务条款及隐私',
   register_wrong_confirm_password_tips: '两次密码不一致',
   // 首页
-  home_stories: '你的故事' };
+  home_stories: '你的故事',
+  // 侧边栏
+  drawer_search: '搜索',
+  drawer_friends: '好友' };
 
 /***/ }),
 /* 21 */
-/*!******************************************!*\
-  !*** D:/my_project/UBlog/language/en.js ***!
-  \******************************************/
+/*!***************************************!*\
+  !*** E:/uniDemo/ublog/language/en.js ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9822,7 +9825,11 @@ module.exports = {
   register_form_confirm_password_placeholder: 'please confirm your password',
   register_policy: 'Terms of Service and Privacy Policy',
   register_wrong_confirm_password_tips: 'Password and Confirm Password inconsistent!',
-  home_stories: 'STORIES' };
+  // 首页
+  home_stories: 'STORIES',
+  // 侧边栏
+  drawer_search: 'Search',
+  drawer_friends: 'Friends' };
 
 /***/ })
 ]]);

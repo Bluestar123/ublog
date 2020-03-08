@@ -15,6 +15,10 @@ module.exports = {
 	register_form_confirm_password_placeholder: 'please confirm your password',
 	register_policy: 'Terms of Service and Privacy Policy',
 	register_wrong_confirm_password_tips: 'Password and Confirm Password inconsistent!',
-	home_stories: 'STORIES'
+	// 首页
+	home_stories: 'STORIES',
+	// 侧边栏
+	drawer_search: 'Search',
+	drawer_friends: 'Friends'
 	
 }

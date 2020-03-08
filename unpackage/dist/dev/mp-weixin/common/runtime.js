@@ -104,11 +104,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"colorui/components/cu-custom/cu-custom":1,"colorui/components/drawer/drawer":1};
+/******/ 		var cssChunks = {"colorui/components/cu-custom/cu-custom":1,"colorui/components/scroll/index":1,"colorui/components/tab/index":1,"colorui/components/drawer/drawer":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"colorui/components/cu-custom/cu-custom":"colorui/components/cu-custom/cu-custom","colorui/components/drawer/drawer":"colorui/components/drawer/drawer"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"colorui/components/cu-custom/cu-custom":"colorui/components/cu-custom/cu-custom","colorui/components/scroll/index":"colorui/components/scroll/index","colorui/components/tab/index":"colorui/components/tab/index","colorui/components/drawer/drawer":"colorui/components/drawer/drawer"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

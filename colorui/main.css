@@ -21,6 +21,9 @@ page{
 	background: #fff;
 }
 
+.hover-class {
+    background-color: #eee!important;
+}
 .w-100 {
 	width: 100%;
 }

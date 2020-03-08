@@ -19,10 +19,13 @@
 					<!-- 随机头像 http://api.btstu.cn/doc/sjtx.php-->
 					<image src="http://api.btstu.cn/sjtx/api.php" class="w-100 h-100"></image>
 				</view>
-				<view class="cu-list grid col-1">
-					<view class="cu-item" v-for="(item,index) in cuIconList" :key="index" v-if="index<gridCol*2">
-						<view :class="['cuIcon-' + item.cuIcon,'text-' + item.color]"></view>
-						<text>{{item.name}}</text>
+				
+				<view class="cu-list w-100 menu">
+					<view class="cu-item arrow" @tap='handleNav(item)' v-for="(item, index) in navList" :key='index' hover-class="hover-class">
+						<view class="content">
+							<text class="text-grey" :class="['cuIcon-' + item.icon]"></text>
+							<text class="text-grey">{{item.navName}}</text>
+						</view>
 					</view>
 				</view>
 			</view>
@@ -37,7 +40,7 @@
 			return {
 				StatusBar: this.StatusBar,
 				CustomBar: this.CustomBar,
-				leftDrawer: false,
+				leftDrawer: false
 			};
 		},
 		name: 'cu-custom',
@@ -54,6 +57,18 @@
 					style = `${style}background-image:url(${bgImage});`;
 				}
 				return style
+			},
+			navList() {
+				let arr =  [
+					{
+						icon: 'friend',
+						navName: this.lang.drawer_friends
+					},{
+						icon: 'search',
+						navName: this.lang.drawer_search
+					}
+				]
+				return arr
 			}
 		},
 		props: {
@@ -74,10 +89,10 @@
 				default: ''
 			},
 		},
-		onReady() {
-			console.log(getCurrentPages(), __wxConfig)
-		},
 		methods: {
+			handleNav () {
+				console.log(123)
+			},
 			BackPage() {
 				if (this.icon === 'back') {
 					if (getCurrentPages().length < 2 && 'undefined' !== typeof __wxConfig) {
@@ -108,5 +123,8 @@
 			box-shadow: darkgrey 0px 0px 20px 2px;
 		}
 	}
+	// .cu-item {
+	// 	border-bottom: 1rpx solid #ccc;
+	// }
 }
 </style>
