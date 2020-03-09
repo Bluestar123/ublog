@@ -1,1 +1,0 @@
-<view><cu-custom vue-id="1" bgColor="{{'bg-'+themeColor.name}}" isBack="{{true}}" icon="sort" bind:__l="__l" vue-slots="{{['content']}}"><view slot="content">{{lang.home_stories}}</view></cu-custom></view>

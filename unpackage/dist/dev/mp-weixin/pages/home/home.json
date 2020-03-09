@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "tab": "/colorui/components/tab/index",
-    "scroll": "/colorui/components/scroll/index"
-  }
-}
