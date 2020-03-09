@@ -51,7 +51,6 @@
 					</view>
 
 					<slot></slot>
-
 					<view v-if="listCount === 0 && emptyShow" class="empty">
 						<image class="empty__image" :src="emptyUrl"></image>
 						<view class="empty__text">{{ emptyText }}</view>
@@ -223,7 +222,7 @@ export default {
 		 */
 		more() {
 			this.overOnePage = true
-			console.log('this.overOnePage: ', this.listCount, this.overOnePage)
+			// console.log('this.overOnePage: ', this.listCount, this.overOnePage)
 
 			if (!this.end) {
 				this.mode = 'more'
@@ -282,7 +281,7 @@ export default {
 			query.select('#refresh').boundingClientRect()
 			query.select('#success').boundingClientRect()
 			query.exec(res => {
-				console.log('init query: ', res[0].height, res[1].height, res[1].height - res[0].height)
+				// console.log('init query: ', res[0].height, res[1].height, res[1].height - res[0].height)
 
 				this.scrollHeight1 = -res[0].height
 				this.scrollHeight2 = res[1].height - res[0].height

@@ -16,6 +16,9 @@ Vue.mixin({
 		},
 		themeColor() {
 			return this.$store.state.themeColor
+		},
+		errorMsg() {
+			return this.$store.state.errorMsg
 		}
 	},
 	watch:{

@@ -66,6 +66,12 @@
 					},{
 						icon: 'search',
 						navName: this.lang.drawer_search
+					},{
+						icon: 'writefill',
+						navName: this.lang.drawer_feed
+					},{
+						icon: 'settings',
+						navName: this.lang.drawer_settings
 					}
 				]
 				return arr

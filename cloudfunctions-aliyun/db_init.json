@@ -18,5 +18,83 @@
 	            "MgoIsUnique": false // 索引是否唯一
 	        }
 	    }]
+	},
+	// 文章类型表'掘金', 'HTML', 'CSS', 'JS', 'VUE', 'UNIAPP', 'LeeCode', '面试'
+	"article_category": {
+	    "data": [ // 数据
+			{
+				"name": "掘金"
+			},
+			{
+				"name": "HTML"
+			},
+			{
+				"name": "CSS"
+			},
+			{
+				"name": "JS"
+			},
+			{
+				"name": "VUE"
+			},
+			{
+				"name": "UNIAPP"
+			},
+			{
+				"name": "LeeCode"
+			},
+			{
+				"name": "面试"
+			},
+			{
+				"name": "英语"
+			}
+	    ],
+	    "index": [{ // 索引
+	        "IndexName": "name", // 索引名称
+	        "MgoKeySchema": { // 索引规则
+	            "MgoIndexKeys": [{
+	                "Name": "name", // 索引字段
+	                "Direction": "1" // 索引方向，1：ASC-升序，-1：DESC-降序
+	            }],
+	            "MgoIsUnique": false // 索引是否唯一
+	        }
+	    }]
+	},
+	// 文章表
+	"article": {
+	    "data": [ // 数据
+			{
+				"headImg": "https://images.weserv.nl/?url=https://p1.ssl.qhimgs1.com/sdr/400__/t012defb31c27aec7eb.jpg",
+				"title": "这个绝望的世界没有存在的价值，所剩的只有痛楚1",
+				"categoryId": "5e65bc25a0b6b0004d90ad08",
+				"description": "思念、愿望什么的都是一场空，被这种虚幻的东西绊住脚，什么都做不到",
+				"date": "2020-03-09"
+			},
+			{
+				"headImg": "https://images.weserv.nl/?url=https://p1.ssl.qhimgs1.com/sdr/400__/t012defb31c27aec7eb.jpg",
+				"title": "这个绝望的世界没有存在的价值，所剩的只有痛楚2",
+				"categoryId": "5e65bc25a0b6b0004d90ad08",
+				"description": "思念、愿望什么的都是一场空，被这种虚幻的东西绊住脚，什么都做不到",
+				"date": "2020-03-08"
+			},
+			{
+				"headImg": "https://images.weserv.nl/?url=https://p1.ssl.qhimgs1.com/sdr/400__/t012defb31c27aec7eb.jpg",
+				"title": "这个绝望的世界没有存在的价值，所剩的只有痛楚css",
+				"categoryId": "5e65bc25a0b6b0004d90ad0a",
+				"description": "思念、愿望什么的都是一场空，被这种虚幻的东西绊住脚，什么都做不到",
+				"date": "2020-03-08"
+			}
+	    ],
+	    "index": [{ // 索引
+	        "IndexName": "date", // 索引名称
+	        "MgoKeySchema": { // 索引规则
+	            "MgoIndexKeys": [{
+	                "Name": "date", // 索引字段
+	                "Direction": "-1" // 索引方向，1：ASC-升序，-1：DESC-降序
+	            }],
+	            "MgoIsUnique": false // 索引是否唯一
+	        }
+	    }]
 	}
 }

@@ -8,7 +8,7 @@
 				:key="index"
 				@tap="toggleTab(index)"
 			>
-				<text :id="'item-' + index" class="tabs__item-child">{{ item }}</text>
+				<text :id="'item-' + index" class="tabs__item-child">{{ item.name }}</text>
 			</view>
 
 			<view :class="['tabs__line', needTransition ? 'transition' : '']" :style="{ backgroundColor: color, width: lineWidth + 'px', transform: 'translateX(' + translateX + 'px)' }"></view>
@@ -52,7 +52,7 @@ export default {
 			tabCur: this.curIndex,
 			needTransition: false, // 下划线是否需要过渡动画
 			translateX: 0, // 下划 line 的左边距离
-			lineWidth: 100, // 下划 line 宽度
+			lineWidth: 0, // 下划 line 宽度
 			scrollLeft: 0 // scroll-view 左边滚动距离
 		}
 	},
@@ -67,11 +67,14 @@ export default {
 		},
 		scroll(newVal, oldVal) {
 			this.init()
+		},
+		tabData(newVal) {
+			this.init()
 		}
 	},
-	mounted() {
-		this.init()
-	},
+	// mounted() {
+	// 	this.init()
+	// },
 	methods: {
 		/**
 		 * 切换菜单
@@ -147,7 +150,7 @@ export default {
 			for (let i = 0; i < this.tabData.length; i++) {
 				query.select(`#item-${i}`).boundingClientRect()
 			}
-
+			
 			query.exec(res => {
 				this.items = res
 				this.scrollByIndex(this.tabCur, false)

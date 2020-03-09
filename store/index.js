@@ -32,7 +32,8 @@ const store = new Vuex.Store({
 			title: '嫣红',
 			name: 'red',
 			color: '#e54d42'
-		}
+		},
+		errorMsg: '系统故障请稍后重试'
 	},
 	mutations: {
 		changeLang: function(state){

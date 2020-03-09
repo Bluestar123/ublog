@@ -19,6 +19,8 @@ module.exports = {
 	home_stories: 'STORIES',
 	// 侧边栏
 	drawer_search: 'Search',
-	drawer_friends: 'Friends'
+	drawer_friends: 'Friends',
+	drawer_feed: 'Feed',
+	drawer_settings: 'Settings'
 	
 }

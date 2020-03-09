@@ -19,5 +19,7 @@ module.exports = {
 	home_stories: '你的故事',
 	// 侧边栏
 	drawer_search: '搜索',
-	drawer_friends: '好友'
+	drawer_friends: '好友',
+	drawer_feed: '反馈',
+	drawer_settings: '设置'
 }
