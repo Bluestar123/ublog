@@ -53,12 +53,14 @@ let testData = []
 		methods: {
 			async getCategoryMenu() {
 				try{
-					const res = await uniCloud.callFunction({
-						name: 'articleCategory',
-						data: {
-							type: 'get'
-						}
-					})
+					// const res = await uniCloud.callFunction({
+					// 	name: 'articleCategory',
+					// 	data: {
+					// 		type: 'get'
+					// 	}
+					// })
+					const res = await this.$uniCloud('articleCategory', {type: 'get'})
+					
 					this.categoryMenu = res.result.data
 					this.categoryData = this.categoryMenu.map(item => {
 						return {
@@ -86,13 +88,18 @@ let testData = []
 				// uni.showNavigationBarLoading()
 				
 				// 请求数据, 第0页开始 1-10条
-				let res = await uniCloud.callFunction({
-					name: "article",
-					data: {
-						categoryId: this.categoryMenu[this.categoryCur]._id,
-						currentPage,
-						pageSize
-					}
+				// let res = await uniCloud.callFunction({
+				// 	name: "article",
+				// 	data: {
+				// 		categoryId: this.categoryMenu[this.categoryCur]._id,
+				// 		currentPage,
+				// 		pageSize
+				// 	}
+				// })
+				let res = await this.$uniCloud('article', {
+					categoryId: this.categoryMenu[this.categoryCur]._id,
+					currentPage,
+					pageSize
 				})
 				testData = res.result.list
 				

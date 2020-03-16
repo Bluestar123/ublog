@@ -25,6 +25,10 @@
             "path" : "pages/activities/activities",
             "style" : {}
         }
+        ,{
+            "path" : "pages/page-details/page-details",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
