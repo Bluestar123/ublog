@@ -21,6 +21,7 @@ module.exports = {
 	drawer_search: 'Search',
 	drawer_friends: 'Friends',
 	drawer_feed: 'Feed',
-	drawer_settings: 'Settings'
-	
+	drawer_settings: 'Settings',
+	// 我的
+	my: 'MY'
 }

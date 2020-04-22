@@ -1,14 +1,14 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		// {
-  //           "path" : "pages/login/login",
-  //           "style" : {
-		// 	}
-  //       },
-		// {
-		//     "path" : "pages/register/register",
-		//     "style" : {}
-		// },
+		{
+            "path" : "pages/login/login",
+            "style" : {
+			}
+        },
+		{
+		    "path" : "pages/register/register",
+		    "style" : {}
+		},
         {
             "path" : "pages/home/home",
             "style" : {}
@@ -27,7 +27,9 @@
         }
         ,{
             "path" : "pages/page-details/page-details",
-            "style" : {}
+            "style" : {
+				"navigationStyle":"default"
+			}
         }
     ],
 	"globalStyle": {
@@ -39,7 +41,7 @@
 	},
 	"tabBar": {
 		"color": "#666666",
-		"selectedColor": "#5677FC",
+		"selectedColor": "#1296DB",
 		"backgroundColor": "#FFFFFF",
 		"list": [{
 				"pagePath": "pages/home/home",

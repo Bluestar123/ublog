@@ -21,5 +21,7 @@ module.exports = {
 	drawer_search: '搜索',
 	drawer_friends: '好友',
 	drawer_feed: '反馈',
-	drawer_settings: '设置'
+	drawer_settings: '设置',
+	// 我的
+	my: '我的'
 }

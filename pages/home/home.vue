@@ -10,11 +10,11 @@
 			<swiper-item v-for="(item, index) in categoryData" :key="index">
 				<scroll :requesting="item.requesting" :end="item.end" :empty-show="item.emptyShow" :list-count="item.listCount" :has-top="true" :refresh-size="80" @refresh="refresh" @more="more">
 					<view class="cells">
-						<view class="cell" v-for="(item, index) in item.listData" :key="index" hover-class="hover-class">
-							<view class="cell__hd"><image mode="aspectFill" :src="item.headImg" /></view>
+						<view class="cell" v-for="(itemC, i) in item.listData" @tap='intoPageDetail(itemC)'  :key="i" hover-class="hover-class">
+							<view class="cell__hd"><image mode="aspectFill" :src="itemC.headImg" /></view>
 							<view class="cell__bd">
-								<view class="name">{{ item.title }}</view>
-								<view class="des">{{ item.description }}</view>
+								<view class="name">{{ itemC.title }}</view>
+								<view class="des">{{ itemC.description }}</view>
 							</view>
 						</view>
 					</view>
@@ -131,6 +131,9 @@ let testData = []
 					}
 				}, 100)
 			},
+			intoPageDetail(item) {
+				this.$router(`/page-details/page-details?id=${item._id}`)
+			},
 			// 顶部tab切换事件
 			toggleCategory(e) {
 				this.duration = 0
@@ -176,7 +179,7 @@ let testData = []
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '~@/colorui/variables';
 .top-wrap {
 	position: fixed;

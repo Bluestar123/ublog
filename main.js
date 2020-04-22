@@ -20,17 +20,6 @@ Vue.mixin({
 		errorMsg() {
 			return this.$store.state.errorMsg
 		}
-	},
-	watch:{
-		themeColor (val) {
-			console.log(val)
-			uni.setTabBarStyle({
-				color: '#7A7E83',
-				selectedColor: '#007AFF',
-				backgroundColor: val,
-				borderStyle: 'white'
-			})
-		}
 	}
 })
 

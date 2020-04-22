@@ -47,6 +47,15 @@ const store = new Vuex.Store({
 					}
 					uni.setStorageSync("userLang", lang.langType)
 					state.lang = lang;
+					// 改tabbar
+					uni.setTabBarItem({
+						index:0,
+						text: lang.home_stories
+					})
+					uni.setTabBarItem({
+						index:3,
+						text: lang.my
+					})
 				}
 			})
 		},

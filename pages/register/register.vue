@@ -71,6 +71,9 @@
 				if (res.result.code === 0) {
 					this.$toast('注册成功')
 					// 跳转
+					setTimeout(() =>{
+						uni.navigateBack()
+					}, 1500)
 				} else {
 					this.$toast(res.result.msg)
 				}

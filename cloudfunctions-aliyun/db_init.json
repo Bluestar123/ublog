@@ -96,5 +96,24 @@
 	            "MgoIsUnique": false // 索引是否唯一
 	        }
 	    }]
+	},
+	"article_details": {
+		"data": [
+			{
+				"_id": "5e65de4590b69b004e362307",
+				"content": "# 你好测不准 hello",
+				"date": "2020-04-18"
+			}
+		],
+		"index": [{
+			"IndexName": "_id", // 索引名称
+			"MgoKeySchema": { // 索引规则
+			    "MgoIndexKeys": [{
+			        "Name": "_id", // 索引字段
+			        "Direction": "-1" // 索引方向，1：ASC-升序，-1：DESC-降序
+			    }],
+			    "MgoIsUnique": true // 索引是否唯一
+			}
+		}]
 	}
 }
