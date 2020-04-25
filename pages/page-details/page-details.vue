@@ -6,7 +6,7 @@
 
 <script>
 	import marked from 'marked'
-	import Parse from '@/components/parse/parse.vue'
+	import Parse from '@/colorui/components/parse/parse.vue'
 	export default {
 		data() {
 			return {
@@ -37,5 +37,5 @@
 </script>
 
 <style>
-@import url("/components/parse/parse.css");
+@import url("/colorui/components/parse/parse.css");
 </style>

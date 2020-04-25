@@ -48,5 +48,5 @@
 	@import "colorui/main.css";
 	@import "colorui/icon.css";
 	@import "colorui/animation.css";
-	@import "components/parse/parse.css";
+	@import "colorui/components/parse/parse.css";
 </style>
